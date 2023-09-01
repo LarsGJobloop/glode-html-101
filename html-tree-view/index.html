@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tree View</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <h1>HTML Tree View</h1>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#top">Top</a>
+          </li>
+          <li>
+            <a href="#mid">Mid</a>
+          </li>
+          <li>
+            <a href="#end">End</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main" id="top">
+      <h2>Her er hoved inneholdet</h2>
+
+      <section id="mid">
+        <h3>Projects</h3>
+        <ul>
+          <li>Project 1</li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Blokk og Inline Elementer</h3>
+        <p>
+          Det er to basis elementer som HTML bruker, Blokk elemnter og Inline
+          elementer.
+        </p>
+        <p>
+          Disse er det som vil være grunnsteinene som du bruker for å konstruere
+          nettsider og applikasjoner med.
+        </p>
+        <img src="../assets/blokk-inline-elementer-no-background.png" alt="" />
+      </section>
+
+      <section>
+        <h3>3 Parts Nettside</h3>
+        <p>
+          Ett eksempel layout for en nettside er 3 parteren&trade;. Veldig grei
+          å bruke og noe du vil se igjen på brorparten av <b>Nettsider</b> du er
+          innom. Untaket blir når du beveger deg mer mot en nett applikasjon.
+        </p>
+
+        <h4>De 3 bitene</h4>
+        <ul>
+          <li>
+            Header seksjonen, muligens du kjenner den igjen under navnet Navbar.
+          </li>
+          <li>
+            Main seksjonen, her er det faktiske inneholdet du har på siden.
+          </li>
+          <li>
+            Footer seksjonen, her legger en som regel kontakt informasjon,
+            informasjon om bedriften, copyryight etc.
+          </li>
+        </ul>
+
+        <img
+          style="width: 18rem"
+          src="../assets/3-parts-layout-no-background.png"
+          alt=""
+        />
+      </section>
+
+      <section>
+        <h3>Visualisering av HTML</h3>
+        <p>
+          Ren HTML tekst kan være vanskelig å orientere seg i. En alternativ
+          representasjon som er mer visuell er det som kalles et Tree.
+        </p>
+
+        <p>
+          Denne Visualisering er noe som dere kanskje kjenner igjen fra et
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Family_tree"
+            >slektstre</a
+          >. Bruk den tanken, for når vi skal inn i JavaScript og navigere
+          programatisk så er det barn (children), foreldre (parents), søsken
+          (siblings) og forfedre (ancestor) vi bruker for å referere til de
+          andre elementene.
+        </p>
+
+        <img src="../assets/tree-view-no-background.png" alt="" />
+      </section>
+    </main>
+
+    <footer class="footer" id="end">
+      <p>by Lars Gunnar</p>
+      <a href="https://github.com/larsgjobloop">GitHub</a>
+    </footer>
+  </body>
+</html>
