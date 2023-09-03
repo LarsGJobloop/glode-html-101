@@ -5,13 +5,20 @@ body {
 
 img {
   /*
-   * Bilder har en oppløsning som blir til bredden på bildet.
+   * Bilder har en bredde som tilsvarer oppløsning på bildet.
    * Her setter vi den til bredden på foreldre kontaineren
    */
   width: 100%;
 }
 
-/* De to påfølgende brukes for den overordnede layouten */
+li {
+  /* Liste elementer (items) har en default markør
+   * Her fjerner vi den
+   */
+  list-style-type: none;
+}
+
+/* De tre påfølgendes selectorene brukes for den overordnede layouten */
 body {
   display: flex;
   flex-direction: column;
@@ -22,7 +29,8 @@ main {
 }
 body > * {
   /* Bruker denne for å sett konsis padding på alle direkte barn av body elementet */
-  padding: 0px 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* Litt mer individuell styling */
@@ -30,8 +38,17 @@ body > * {
   /* Layout */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   background-color: rgb(215, 125, 92);
+}
+.navbar > h1 {
+  margin: 0px;
+}
+.navbar > nav > ul {
+  /* Layout */
+  display: flex;
+  gap: 1rem;
 }
 
 .main {
@@ -43,6 +60,9 @@ body > * {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
   background-color: rgb(249, 200, 74);
 }
